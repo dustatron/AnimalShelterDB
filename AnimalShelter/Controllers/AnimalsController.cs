@@ -38,5 +38,23 @@ namespace AnimalShelter.Controllers
       Animal thisAnimal = _db.Animals.FirstOrDefault(animals => animals.AnimalId == id);
       return View(thisAnimal);
     }
+
+    public ActionResult Sort(int sortParam)
+    {
+      List<Animal> model = new List<Animal> { };
+
+      if (sortParam == 1)
+      {
+        //Ascending
+        model = _db.Animals.OrderBy(x => x.Type).ToList();
+      }
+      else
+      {
+        // Descending
+        model = _db.Animals.OrderByDescending(x => x.Type).ToList();
+      }
+
+      return View(model);
+    }
   }
 }

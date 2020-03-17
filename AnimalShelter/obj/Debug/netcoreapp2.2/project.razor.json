@@ -2984,6 +2984,11 @@
       "FilePath": "/Users/JoseAmesquita/Desktop/AnimalShelter.Solution/AnimalShelter/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/JoseAmesquita/Desktop/AnimalShelter.Solution/AnimalShelter/Views/Animals/Sort.cshtml",
+      "TargetPath": "Views\\Animals\\Sort.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

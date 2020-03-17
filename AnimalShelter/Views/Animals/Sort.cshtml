@@ -1,8 +1,8 @@
 @{
-  Layout ="_Layout";
+  Layout = "_Layout";
 }
-<h1> ANIMALS HOME </h1>
 
+<h1> SORT </h1>
 @using AnimalShelter.Models;
 @model List<AnimalShelter.Models.Animal>
 
@@ -20,5 +20,3 @@ else
   </ul>
 }
 
-<p> @Html.ActionLink("Sort Ascending", "Sort", new { sortParam = 1 })</p>
-<p> @Html.ActionLink("Sort Descending", "Sort", new { sortParam = 2 })</p>

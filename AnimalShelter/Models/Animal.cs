@@ -13,7 +13,6 @@ namespace AnimalShelter.Models
 
     public string Breed { get; set; }
     public DateTime Date { get; set; }
-
   }
 
 
