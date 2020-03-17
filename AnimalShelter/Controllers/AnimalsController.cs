@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using AnimalShelter.Models;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace AnimalShelter.Controllers
 {
@@ -27,6 +28,7 @@ namespace AnimalShelter.Controllers
     [HttpPost]
     public ActionResult Create(Animal animal)
     {
+      animal.Date = DateTime.Now;
       _db.Animals.Add(animal);
       _db.SaveChanges();
       return RedirectToAction("Index");
