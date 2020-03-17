@@ -56,5 +56,13 @@ namespace AnimalShelter.Controllers
 
       return View(model);
     }
+
+    public ActionResult Search(string search)
+    {
+      List<Animal> model = _db.Animals.Where(animal => (animal.Name == search) || (animal.Type == search) || (animal.Gender == search) || (animal.Breed == search)).ToList();
+
+      return View(model);
+
+    }
   }
 }

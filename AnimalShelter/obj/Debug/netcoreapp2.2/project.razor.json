@@ -2961,6 +2961,11 @@
   "RootNamespace": "AnimalShelter",
   "Documents": [
     {
+      "FilePath": "/Users/JoseAmesquita/Desktop/AnimalShelter.Solution/AnimalShelter/Views/Animals/Search.cshtml",
+      "TargetPath": "Views\\Animals\\Search.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/JoseAmesquita/Desktop/AnimalShelter.Solution/AnimalShelter/Views/Animals/Index.cshtml",
       "TargetPath": "Views\\Animals\\Index.cshtml",
       "FileKind": "mvc"

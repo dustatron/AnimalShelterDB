@@ -4,19 +4,28 @@
 
 @model AnimalShelter.Models.Animal
 
-<h4>Add a new animal</h4>
-@using (Html.BeginForm())
-{
-    @Html.LabelFor(model => model.Type)
-    @Html.TextBoxFor(model => model.Type)
-    @Html.LabelFor(model => model.Name)
-    @Html.TextBoxFor(model => model.Name)
-    @Html.LabelFor(model => model.Gender)
-    @Html.TextBoxFor(model => model.Gender)
-    @Html.LabelFor(model => model.Breed)
-    @Html.TextBoxFor(model => model.Breed)
-    @* @Html.LabelFor(model => model.Date)
-    @Html.EditorFor(model => model.Date, new { @type = "date"}) *@
-    <input type="submit" value="Add a new animal">
-}
-<p>@Html.ActionLink("Show all animals", "Index")</p>
+<h4 class="text-center">Add a new animal</h4>
+<div class="col-md-6 offset-md-3">
+  @using (Html.BeginForm())
+  {
+    <div class="form-group">
+      @Html.LabelFor(model => model.Type)
+      @Html.TextBoxFor(model => model.Type, new { @class = "form-control"})
+    </div>
+    <div class="form-group">
+      @Html.LabelFor(model => model.Name)
+      @Html.TextBoxFor(model => model.Name, new { @class = "form-control"} )
+    </div>
+    <div class="form-group">
+      @Html.LabelFor(model => model.Gender)
+      @Html.TextBoxFor(model => model.Gender, new { @class = "form-control"})
+    </div>
+    <div class="form-group">
+      @Html.LabelFor(model => model.Breed)
+      @Html.TextBoxFor(model => model.Breed, new { @class = "form-control"})
+    </div>
+
+      <input type="submit" value="Add a new animal" class="btn btn-primary btn-lg btn-block">
+  }
+</div>
+<p class="text-center">@Html.ActionLink("Show all animals", "Index")</p>

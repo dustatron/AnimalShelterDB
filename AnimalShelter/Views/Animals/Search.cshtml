@@ -1,14 +1,14 @@
 @{
-  Layout ="_Layout";
+  Layout = "_Layout";
 }
-<h1> ANIMALS HOME </h1>
-
 @using AnimalShelter.Models;
 @model List<AnimalShelter.Models.Animal>
 
+<h1>SEARCH</h1>
+
 @if(Model.Count == 0)
 {
-  <p> No animals in system yet </p>
+  <p> No animals match this search </p>
 }
 else
 {
@@ -19,7 +19,4 @@ else
     }
   </ul>
 }
-
-<p> @Html.ActionLink("Sort Ascending", "Sort", new { sortParam = 1 })</p>
-<p> @Html.ActionLink("Sort Descending", "Sort", new { sortParam = 2 })</p>
 
